@@ -1,4 +1,4 @@
-const { model } = require("mongoose");
+// const { model } = require("mongoose");
 
 model.exports = {
     Workout: require("./workout")
