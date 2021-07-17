@@ -1,7 +1,7 @@
-const db = require("../node_modules");  //const db = require("../models")
+const db = require("../models");
 const router = require("express").Router();
 
-// Gets or retrieves the workout
+// Gets or retrieves the workout from the db
 router.get("/api/workouts", (req, res)=>{
     db.Workout.find({}).then(dbWorkout =>{
         dbWorkout.forEach(workout=>{
